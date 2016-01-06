@@ -38,10 +38,13 @@
                                     <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> Mon Profil</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
+                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i> Editer</a>
+                                </li>
+                                 <li>
+                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-th"></i> Trouver des amis</a>
                                 </li>
                                 <li>
-                                    <a href="" role="button" data-toggle="modal"><i class="glyphicon glyphicon-editer"></i> Editer</a>
+                                    <a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
                                 </li>
                             </ul>
 						</nav>
