@@ -30,6 +30,8 @@ Route::group(['middleware' => 'auth'], function(){
         return "A changer par une action d'un controller";
     });
 
+
+
     // TODO
 
 });

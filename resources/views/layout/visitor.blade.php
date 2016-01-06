@@ -34,7 +34,7 @@
 						</nav>
 					</div>
 					<div class="col-sm-6 col-sm-offset-3">
-	                    <div class="padding well">
+	                    <div class="padding">
 	                        <div class="full col-sm-9">
 	                            <div class="panel panel-default">
 	                                @yield('content')

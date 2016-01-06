@@ -1,7 +1,7 @@
-@extends('../../layout/visitor')
+@extends('layout.visitor')
 
 @section('content')
-<form class="form" method="POST" action="/auth/register">
+<form class="form" method="POST" action="{{ route('auth.register') }}">
     {!! csrf_field() !!}
 
     <div class="input-group text-center col-sm-12 padding">

@@ -213,6 +213,19 @@ h1,h2,h3 {
   color:#555555;
 }
 
+.message {
+  font-weight: bold;
+}
+
+.commentaires {
+  padding: 10px 0 10px 0;
+  background-color: #f9f9f9;
+}
+
+.commentaire {
+  
+}
+
 .col-sm-9.full {
     width: 100%;
 }
@@ -245,6 +258,18 @@ small.text-muted {
 
 .bg-blue {
     background-color:#3B5999 !important;
+}
+
+.fb-blue {
+  color:#3B5999;
+}
+
+.fl-right {
+  float: right;
+}
+
+.ami {
+  height: 40px;
 }
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,18 +32,26 @@
 						<nav class="collapse navbar-collapse" role="navigation">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href=""><i class="glyphicon glyphicon-home"></i> Accueil</a>
+                                    <a href="#"><i class="glyphicon glyphicon-home"></i> Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i>Mon Profil</a>
+                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i>Mon Profil</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
+                                </li>
+                                <li>
+                                    <a href="" role="button" data-toggle="modal"><i class="glyphicon glyphicon-editer"></i> Editer</a>
                                 </li>
                             </ul>
 						</nav>
 					</div>
                     <div class="padding">
-                        <div class="full col-sm-9">
-                            <div class="row">
-                                @yield('content')
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="padding">
+                                <div class="full col-sm-9">
+                                        @yield('content')
+                                </div>
                             </div>
                         </div>
                     </div>
