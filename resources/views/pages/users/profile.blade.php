@@ -1,1 +1,7 @@
-@extends('facebook')
+@extends('layout.facebook')
+
+@section('content')
+
+
+
+@endsection

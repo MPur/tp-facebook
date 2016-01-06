@@ -27,6 +27,7 @@ Route::group(['as' => 'auth.'], function(){
 Route::group(['middleware' => 'auth'], function(){
 
     Route::get('/', function(){
+        return view('pages.users.directory');
         return "A changer par une action d'un controller";
     });
 

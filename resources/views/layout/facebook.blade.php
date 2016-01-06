@@ -35,7 +35,7 @@
                                     <a href="#"><i class="glyphicon glyphicon-home"></i> Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i>Mon Profil</a>
+                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> Mon Profil</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
