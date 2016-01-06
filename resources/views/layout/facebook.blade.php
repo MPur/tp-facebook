@@ -43,10 +43,12 @@
                                  <li>
                                     <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-th"></i> Trouver des amis</a>
                                 </li>
-                                <li>
-                                    <a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
-                                </li>
                             </ul>
+                            <ul class="nav navbar-nav navbar-right">
+									<li>
+										<a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
+									</li>
+								</ul>
 						</nav>
 					</div>
                     <div class="padding">
