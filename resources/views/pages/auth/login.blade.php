@@ -1,17 +1,25 @@
+@extends('../../layout/visitor')
+
+@section('content')
 <form method="POST" action="/auth/login">
     {!! csrf_field() !!}
 
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="email" name="email" placeholder="Email"  value="{{ old('email') }}">
     </div>
 
-    <div>
-        Password
-        <input type="password" name="password" id="password">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="password" placeholder="Mot de passe" name="password">
     </div>
 
-    <div>
-        <button type="submit">Login</button>
+    <div class="input-group text-center col-sm-12 padding">
+        <button class="btn btn-lg btn-primary" type="submit">Se connecter</button>
+    </div>
+
+    <div class="input-group text-center col-sm-12 padding">
+        <a href="inscription">Si vous n'avez pas de compte inscrivez vous ici</a>
+    </div>
+
     </div>
 </form>
+@endsection

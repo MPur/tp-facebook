@@ -1,27 +1,27 @@
-<form method="POST" action="/auth/register">
+@extends('../../layout/visitor')
+
+@section('content')
+<form class="form" method="POST" action="/auth/register">
     {!! csrf_field() !!}
 
-    <div>
-        Name
-        <input type="text" name="name" value="{{ old('name') }}">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="text" name="name" placeholder="Nom"  value="{{ old('name') }}">
     </div>
 
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="email" name="email" placeholder="Email"  value="{{ old('email') }}">
     </div>
 
-    <div>
-        Password
-        <input type="password" name="password">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="password" placeholder="Mot de passe" name="password">
     </div>
 
-    <div>
-        Confirm Password
-        <input type="password" name="password_confirmation">
+    <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="password" placeholder="Confirmer le mot de passe" name="password_confirmation">
     </div>
 
-    <div>
-        <button type="submit">Register</button>
+    <div class="input-group text-center col-sm-12 padding">
+        <button class="btn btn-lg btn-primary" type="submit">S'inscrire</button>
     </div>
 </form>
+@endsection
