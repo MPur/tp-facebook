@@ -1,0 +1,10 @@
+{
+  "package": {
+    "name": "MPur/tp-facebook",
+    "source": {
+      "url": "https://github.com/MPur/tp-facebook.git",
+      "type": "git",
+      "reference": "master"
+    }
+  }
+}
