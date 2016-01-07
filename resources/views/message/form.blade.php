@@ -1,8 +1,15 @@
-<form class="padding">
-	<div class="input-group">
-		<div class="input-group-btn">
-				<button class="btn btn-primary">Poster</button>
+<div class="well">
+	<form class="form-horizontal" role="form" method="post" action="{{-- route pour créer un message en utilisant la fonction route --}}">
+		<h4>What's New</h4>
+		{{ csrf_field() }}
+		<div class="form-group" style="padding:14px;">
+			<textarea name="content" class="form-control" placeholder="Ecrire un message"></textarea>
 		</div>
-		<input class="form-control" placeholder="Ecrire un message" type="text">
-	</div>
-</form>	
+		<button class="btn btn-primary pull-right" type="submit">Poster</button>
+        <ul class="list-inline">
+            <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+            <li><a href=""><i class="glyphicon glyphicon-file"></i></a></li>
+            <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
+        </ul>
+	</form>
+</div>

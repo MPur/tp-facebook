@@ -26,13 +26,6 @@ Route::group(['as' => 'auth.'], function(){
 // Routes inaccessibles si l'utilisateur n'est pas authentifié
 Route::group(['middleware' => 'auth'], function(){
 
-    Route::get('/', function(){
-        return view('pages.users.directory');
-        return "A changer par une action d'un controller";
-    });
-
-
-
     // TODO
 
 });

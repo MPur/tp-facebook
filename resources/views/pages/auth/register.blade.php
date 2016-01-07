@@ -13,6 +13,10 @@
     </div>
 
     <div class="input-group text-center col-sm-12 padding">
+        <input class="form-control input-lg" type="text" name="age" placeholder="Age"  value="{{ old('age') }}">
+    </div>
+
+    <div class="input-group text-center col-sm-12 padding">
         <input class="form-control input-lg" type="password" placeholder="Mot de passe" name="password">
     </div>
 

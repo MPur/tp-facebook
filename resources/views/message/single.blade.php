@@ -1,22 +1,22 @@
 	<div class="panel panel-default">
-		<div class="panel-heading">Nom de l'utilisateur</div>
+		<div class="panel-heading">{{-- nom de l'utilisateur --}} - {{-- $message->created_at->diffForHumans() --}}</div>
 		<div class="panel-body">
 
 			<div class="message">
-				Contenu du message <button class="btn btn-default right">Je kiff <i class="glyphicon glyphicon-thumbs-up"></i></button>
-			</div>
+				{{-- contenu du message --}}
+            </div>
+            <form method="post" action="{{-- route pour ajouter un kiff au message en utilisant la fonction route --}}">
+                {{ csrf_field() }}
+				{{-- si les likes sont > 0 alors on affiche le nombre de kiff(s) --}}
+                <button type="submit" class="btn btn-default right">Je kiff <i class="glyphicon glyphicon-thumbs-up"></i></button>
+            </form>
 
-			<div class="commentaires">
-				@include('comment.single')
-			</div>
 
-			<form class="padding">
-				<div class="input-group">
-					<div class="input-group-btn">
-		 				<button class="btn btn-primary">Commenter</button>
-					</div>
-					<input class="form-control" placeholder="Ajouter un commentaire" type="text">
-				</div>
-			</form>
+            @foreach($message->comments as $comment)
+			<div class="padding commentaires">
+				{{-- inclure la vue single du commentaire $comment --}}
+			</div>
+            @endforeach
+			{{-- inclure la vue form du message $message --}}
 		</div>
 	</div>

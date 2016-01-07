@@ -37,6 +37,7 @@
 	                    <div class="padding">
 	                        <div class="full col-sm-9">
 	                            <div class="panel panel-default">
+									@include('partials.errors')
 	                                @yield('content')
 	                            </div>
 	                        </div>
