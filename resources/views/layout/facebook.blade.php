@@ -29,24 +29,6 @@
 								<a href="" class="navbar-brand logo">b</a>
 							</div>
 
-<<<<<<< HEAD
-							<nav class="collapse navbar-collapse" role="navigation">
-								<ul class="nav navbar-nav">
-									<li>
-										<a href="{{ route('news-feed') }}"><i class="glyphicon glyphicon-home"></i> Accueil</a>
-									</li>
-									<li>
-										<a href="{{ route('users.show', ['users' => Auth()->user()->id]) }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> {{ auth()->user()->name }}</a>
-									</li>
-									<li>
-										<a href="{{ route('users.edit', ['users' => Auth()->user()->id]) }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i> Editer</a>
-									</li>
-									 <li>
-										<a href="{{ route('directory') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-th"></i> Trouver des amis</a>
-									</li>
-								</ul>
-								<ul class="nav navbar-nav navbar-right">
-=======
 						<nav class="collapse navbar-collapse" role="navigation">
                             <ul class="nav navbar-nav">
                                 <li>
@@ -63,12 +45,10 @@
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
->>>>>>> dcd8e9aaa2d90d2877edf64da79ba626413a5030
 									<li>
 										<a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
 									</li>
 								</ul>
-<<<<<<< HEAD
 							</nav>
 						</div>
 						<div class="padding">
@@ -80,9 +60,6 @@
 								</div>
 							</div>
 						</div>
-=======
-						</nav>
->>>>>>> dcd8e9aaa2d90d2877edf64da79ba626413a5030
 					</div>
 				</div>
 			</div>
