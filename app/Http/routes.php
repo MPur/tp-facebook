@@ -26,6 +26,10 @@ Route::group(['as' => 'auth.'], function(){
 // Routes inaccessibles si l'utilisateur n'est pas authentifié
 Route::group(['middleware' => 'auth'], function(){
 
+	Route::get('/', function(){
+		return 'Route fourni par défaut et à supprimer';
+	});
+
     // TODO
 
 });
