@@ -29,22 +29,22 @@
 								<a href="" class="navbar-brand logo">b</a>
 							</div>
 
-						<nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav navbar-nav">
-                                <li>
-                                    <a href="#"><i class="glyphicon glyphicon-home"></i> Accueil</a>
-                                </li>
-                                <li>
-                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> Mon Profil</a>
-                                </li>
-                                <li>
-                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i> Editer</a>
-                                </li>
-                                 <li>
-                                    <a href="#" role="button" data-toggle="modal"><i class="glyphicon glyphicon-th"></i> Trouver des amis</a>
-                                </li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
+							<nav class="collapse navbar-collapse" role="navigation">
+								<ul class="nav navbar-nav">
+									<li>
+										<a href="{{ route('news-feed') }}"><i class="glyphicon glyphicon-home"></i> Accueil</a>
+									</li>
+									<li>
+										<a href="{{ route('users.show', ['users' => Auth()->user()->id]) }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-user"></i> {{ auth()->user()->name }}</a>
+									</li>
+									<li>
+										<a href="{{ route('users.edit', ['users' => Auth()->user()->id]) }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i> Editer</a>
+									</li>
+									 <li>
+										<a href="{{ route('directory') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-th"></i> Trouver des amis</a>
+									</li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
 									<li>
 										<a href="{{ route('auth.logout') }}" role="button" data-toggle="modal"><i class="glyphicon glyphicon-log-out"></i> Déconnexion</a>
 									</li>
